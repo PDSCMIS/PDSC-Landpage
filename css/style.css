@@ -148,7 +148,7 @@ html {
 
 
 --ff-head:"Roboto", sans-serif;
---ff-body:"Lato", sans-serif;
+--ff-body:"Lato", sans-serif;  
 
 --step--2: clamp(0.9549rem, 0.9305rem + 0.1216vw, 1.04rem);
 --step--1: clamp(1.1458rem, 1.1018rem + 0.2202vw, 1.3rem);
@@ -197,6 +197,7 @@ nav a {transition: color 300ms;}
 .c-active {color: var(--accent);}
  
 .c-font-primary {font-family: var(--ff-head);}
+.c-font-secondary {font-family: var(--ff-body);}
 
  
 /* Customize */
@@ -204,7 +205,6 @@ nav a {transition: color 300ms;}
 .Menu a {
   color: var(--white); 
   font-family: var(--ff-head);
-
 }
  
 .footer-quick-link  a {
@@ -234,3 +234,58 @@ nav a {transition: color 300ms;}
 #backToTopBtn :hover {
   color: var(--secondary)
 }
+
+ 
+/* #region keyFrame */
+
+
+
+
+.scroll-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 2s;
+}
+
+.scroll-bottom {
+  opacity: 0;
+  transform: translateY(300px);
+  transition: 3s;
+}
+
+.scroll-top {
+  opacity: 0;
+  transform: translateY(-300px);
+  transition: 3s;
+}
+
+.show-items {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+ 
+
+@keyframes glow {
+  0% {
+    background-color: var(--bg-color);
+    box-shadow: none;
+  }
+  100% {
+    background: var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+  }
+}
+
+@keyframes slideAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* #endregion */
+
