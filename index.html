@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDSC | Home</title>
+    <link rel="stylesheet" href="./img/bootstrap-logo.svg" />
+
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- #region Header --> 
+    <header>
+      <nav class="navbar navbar-expand-lg py-3 c-bg-primary">
+        <div class="container-fluid">
+          <img class="ms" src="./img/pds_logo.svg" width="75" alt="logo" />
+          <!-- <a
+            class="navbar-brand text-uppercase c-text-white ms-4 display-1 c-font-primary"
+            href="#"
+            >Physicians' Diagnostic Services Center</a 
+          > -->
+          <p  class="text-uppercase c-text-white ms-4 h4 c-font-primary"><b>Physicians' Diagnostic Services Center</b></p>
+
+          <button
+            class="navbar-toggler c-bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse me-5" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 Menu">
+              <li class="nav-item">
+                <a class="h6 nav-link" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="h6 text-decoration-none nav-link" href="#" >ABOUT US</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="h6 text-decoration-none nav-link" href="#">SERVICES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="h6 text-decoration-none nav-link" href="./branches.html">BRANCHES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="h6 text-decoration-none nav-link" href="#">CONTACT US</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PORTAL
+                </a>
+                <ul class="dropdown-menu c-bg-tertiary">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://pdsc.setupphils.com/login/agency"
+                      >Agency</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://pdsc.setupphils.com/login/admin"
+                      >Applicant</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- #endregion Header -->
+
+    <!-- #region main -->
+    <main>
+      <!-- #region Slider -->
+
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2500">
+            <img
+              src="./img/carousel/carousel_1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel-caption d-none d-md-grid h-100 bottom-0 align-content-start justify-end"
+            >
+              <h5 class="">First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img
+              src="./img/carousel/carousel_2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img
+              src="./img/carousel/carousel_3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img
+              src="./img/carousel/carousel_4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- #endregion Slider -->
+
+      <!-- #region Hero -->
+      <section class="container-fluid c-bg-white text-center my-0">
+        <div class="container">
+          <h2 class="pt-4 c-text-primary my-5">
+            Physicians' Diagnostic Services Center (PDSC), Inc.
+          </h2>
+          <p class="my-3">
+            The Physicians' Diagnostic Services Center (PDSC), Inc. began in
+            1978 as a modest medical facility crammed in a 32 square meter
+            office at the Prudential Assurance Building in Intramuros. PDSC
+            specialized in occupational medicine. With company retainerships,
+            the clinic rendered pre-employment medical examinations for
+            businesses such as the Central Textile Mills and for employees of
+            the North and South Harbors.
+          </p>
+        </div>
+      </section>
+      <!-- #endregion Hero -->
+
+      <section class="container-fluid c-bg-secondary py-5 my-0">
+        <div class="container">
+          <div class="row text-center c-text-white">
+            <h2 class="mb-4">OUR SERVICES</h2>
+            <hr />
+            <p class="justify-content-center mb-4">
+              We are committed to delivering high-quality, personalized
+              healthcare. Our experienced team provides comprehensive services,
+              from preventative care to specialized treatments, with a focus on
+              your unique needs. We prioritize patient-centered care, ensuring
+              you feel supported and informed at every step.
+            </p>
+          </div>
+
+          <div class="row row-cols-2 row-cols-md-3 g-4 cardHead">
+            <article class="col">
+              <div class="card h-100 rounded-0 border-0 text-center">
+                <img src="./img/services/medicalExam.jpg" alt="medical_Image" />
+                <div class="card-body">
+                  <h5 class="card-title h5 c-text-black text-uppercase">
+                    Laboratory Examinations
+                  </h5>
+                  <p class="card-text c-text-lightBlack">
+                    Most modern medical laboratory equipments for various tests.
+                  </p>
+                  <a href="#" class="text-decoration-none">Learn more</a>
+                </div>
+              </div>
+            </article>
+            <article class="col">
+              <div class="card h-100 rounded-0 border-0 text-center">
+                <img
+                  src="./img/services/LaboratoryExam.jpg"
+                  alt="medical_Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title h5 c-text-black text-uppercase">
+                    Laboratory Examinations
+                  </h5>
+                  <p class="card-text c-text-lightBlack">
+                    One-stop medical and dental facility that offers services
+                    for everyone
+                  </p>
+                  <a href="#" class="text-decoration-none">Learn more</a>
+                </div>
+              </div>
+            </article>
+            <article class="col">
+              <div class="card h-100 rounded-0 border-0 text-center">
+                <img src="./img/services/vaccination.jpg" alt="va_Image" />
+                <div class="card-body">
+                  <h5 class="card-title h5 c-text-black text-uppercase">
+                    Vaccination
+                  </h5>
+                  <p class="card-text c-text-lightBlack">
+                    Our immunization services are fast and reliable.
+                  </p>
+                  <a href="#" class="text-decoration-none">Learn more</a>
+                </div>
+              </div>
+            </article>
+            <article class="col">
+              <div class="card h-100 rounded-0 border-0 text-center">
+                <img src="./img/services/radioExam.jpg" alt="rad_Image" />
+                <div class="card-body">
+                  <h5 class="card-title h5 c-text-black text-uppercase">
+                    Radiologic Examinations
+                  </h5>
+                  <p class="card-text c-text-lightBlack">
+                    Most modern machines for the different X-ray examinations
+                    that we offer.
+                  </p>
+                  <a href="#" class="text-decoration-none">Learn more</a>
+                </div>
+              </div>
+            </article>
+            <article class="col">
+              <div class="card h-100 rounded-0 border-0 text-center">
+                <img src="./img/services/special_exam.jpg" alt="rad_Image" />
+                <div class="card-body">
+                  <h5 class="card-title h5 c-text-black text-uppercase">
+                    Special Procedures
+                  </h5>
+                  <p class="card-text c-text-lightBlack">
+                    Special procedures that are available to everyone at very
+                    affordable prices.
+                  </p>
+                  <a href="#" class="text-decoration-none">Learn more</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- #region Address -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <address class="mb-0">
+              <iframe
+                class="w-100"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1365.1847822408142!2d120.97988220291562!3d14.580509584550759!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca25ed43b08f%3A0x1cc34e72c564f1a9!2sPhysicians%20Diagnostic%20Center!5e0!3m2!1sen!2sph!4v1728461144524!5m2!1sen!2sph"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </address>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <!-- #region form -->
+            <section class="container-fluid m-auto">
+              <div class="container">
+                <form class="row p-4 gap-3 c-bg-white">
+                  <h2>Contact Us</h2>
+                  <hr />
+                  <input
+                    class="form-control"
+                    placeholder="Full Name"
+                    type="text"
+                  />
+                  <input
+                    class="form-control"
+                    placeholder="Email"
+                    type="email"
+                  />
+                  <input
+                    class="form-control"
+                    type="tel"
+                    placeholder="Mobile No."
+                  />
+                  <textarea
+                    class="form-control"
+                    name=""
+                    id=""
+                    placeholder="message"
+                  ></textarea>
+                  <button class="btn btn-success">send</button>
+                </form>
+              </div>
+            </section>
+            <!-- #endregion form -->
+          </div>
+        </div>
+        <div class="row">
+          <address class="container-xxl p4">
+            <figure>
+              <figcaption>
+                Physicians' Tower, 533 United Nations Avenue cor. San Carlos
+                St., Ermita Manila, Philippines
+              </figcaption>
+            </figure>
+          </address>
+        </div>
+      </div>
+
+      <!-- #endregion Address -->
+    </main>
+
+    <!-- #endregion main -->
+ 
+
+    <!-- #region footer -->
+    <footer class="container-fluid c-bg-primary px-0 c-text-white">
+      <div class="container">
+        <div class="row"> 
+          <div class="col">
+              <img class="" src="./img/pds_logo.svg" width="75" alt="logo">
+          </div> 
+        </div> 
+
+        <div class="container text-center">
+          <p>© 2024 Physicians' Diagnostic Services Center</p>
+        </div>
+
+ 
+      </div>
+    </footer>
+    <!-- #endregion footer -->
+
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
