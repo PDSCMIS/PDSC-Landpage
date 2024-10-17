@@ -200,12 +200,12 @@
       <!-- #endregion Slider -->
 
       <!-- #region Hero -->
-      <section class="container-fluid c-bg-white text-center my-0">
+      <section class="container-fluid c-bg-white text-center py-5">
         <div class="container">
-          <h2 class="pt-4 c-text-primary my-5">
+          <h2 class="c-text-primary py-4">
             Physicians' Diagnostic Services Center (PDSC), Inc.
           </h2>
-          <p class="my-3">
+          <p class="">
             The Physicians' Diagnostic Services Center (PDSC), Inc. began in
             1978 as a modest medical facility crammed in a 32 square meter
             office at the Prudential Assurance Building in Intramuros. PDSC
@@ -313,76 +313,80 @@
         </div>
       </section>
 
-      <!-- #region Address -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <address class="mb-0">
-              <iframe
-                class="w-100"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1365.1847822408142!2d120.97988220291562!3d14.580509584550759!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca25ed43b08f%3A0x1cc34e72c564f1a9!2sPhysicians%20Diagnostic%20Center!5e0!3m2!1sen!2sph!4v1728461144524!5m2!1sen!2sph"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </address>
-          </div>
 
-          <div class="col-12 col-md-6">
-            <!-- #region form -->
-            <section class="container-fluid m-auto">
-              <div class="container">
-                <form class="row p-4 gap-3 c-bg-white">
-                  <h2>Contact Us</h2>
-                  <hr />
-                  <input
-                    class="form-control"
-                    placeholder="Full Name"
-                    type="text"
-                  />
-                  <input
-                    class="form-control"
-                    placeholder="Email"
-                    type="email"
-                  />
-                  <input
-                    class="form-control"
-                    type="tel"
-                    placeholder="Mobile No."
-                  />
-                  <textarea
-                    class="form-control"
-                    name=""
-                    id=""
-                    placeholder="message"
-                  ></textarea>
-                  <button class="btn btn-success">send</button>
-                </form>
-              </div>
-            </section>
-            <!-- #endregion form -->
-          </div>
-        </div>
-        <div class="row">
-          <address class="container-xxl p4">
-            <figure>
-              <figcaption>
-                Physicians' Tower, 533 United Nations Avenue cor. San Carlos
-                St., Ermita Manila, Philippines
-              </figcaption>
-            </figure>
-          </address>
-        </div>
-      </div>
+      <style>
+        address, figure {margin-bottom: 0;}
+  
+        #contact-info {
+          display: grid;
+          justify-content: center;
+          gap: 1rem;
+          grid-template-columns: repeat(auto-fit, 267px);
+        }
+  
+        #contact-info > figure {
+          display: grid;
+          grid: 
+          "   .   .   "
+          /  auto 1fr;
+          align-items: center;
+          gap: 1rem;
+        }
+  
+        @media only screen and (min-width:992px) {
+          #contact-info {
+            grid-auto-flow: column;
+            justify-content: space-evenly;
+          }
+        }
+  
+      </style>
 
-      <!-- #endregion Address -->
+
+      <!-- #region Map -->
+      <address>
+        <iframe
+          class="w-100"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1365.1847822408142!2d120.97988220291562!3d14.580509584550759!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca25ed43b08f%3A0x1cc34e72c564f1a9!2sPhysicians%20Diagnostic%20Center!5e0!3m2!1sen!2sph!4v1728461144524!5m2!1sen!2sph"
+          width="600"  height="450"  style="border: 0"  allowfullscreen=""   loading="lazy"    referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </address>
+
+      <address class="container-xxl -py-4 py-4" id="contact-info" >
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+            Physicians' Tower,
+            533 United Nations Avenue
+            cor. San Carlos St., Ermita
+            Manila, Philippines
+          </figcaption>
+        </figure>
+
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg>
+          <figcaption>
+            Direct Line: (+63)(2) 8521.49.75
+            Trunk Line: (+63) (2) 8524.06.26. to 28 
+            Telefax: (+63) (2) 8523.78.33
+          </figcaption>
+        </figure>
+        
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+          </svg>
+          <figcaption>
+           manila@pdsclinics.com
+          </figcaption>
+        </figure>
+      </address>
+      <!-- #endregion Map -->
     </main>
 
     <!-- #endregion main -->
- 
 
     <!-- #region footer -->
     <footer class="container-fluid c-bg-primary px-0 c-text-white">
