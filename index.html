@@ -94,105 +94,63 @@
     <main>
       <!-- #region Slider -->
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button> 
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button> 
         </div>
+        
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2500">
-            <img
-              src="./img/carousel/carousel_1.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div
-              class="carousel-caption d-none d-md-grid h-100 bottom-0 align-content-start justify-end"
-            >
-              <h5 class="">First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+          <div class="carousel-item active">
+            <img src="./img/carousel/carousel_5.png" class="d-block w-100" alt="carousel">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-3 text-capitalize">First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2500">
-            <img
-              src="./img/carousel/carousel_2.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+          <div class="carousel-item">
+            <img src="./img/carousel/carousel_2.jpg" class="d-block w-100" alt="carousel">
+            <div class="carousel-caption d-none d-md-block card-img-overlay">
+              <h5 class="display-3 text-capitalize">Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2500">
-            <img
-              src="./img/carousel/carousel_3.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
+          <div class="carousel-item">
+            <img src="./img/carousel/carousel_3.jpg" class="d-block w-100" alt="carousel">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
+              <h5 class="display-3 text-capitalize">Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2500">
-            <img
-              src="./img/carousel/carousel_4.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
+          <div class="carousel-item">
+            <img src="./img/carousel/carousel_4.jpg" class="d-block w-100" alt="carousel">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
+              <h5 class="display-3 text-capitalize">Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div> 
+           </div>
+        <div class="carousel-item">
+          <img src="./img/carousel/carousel_1.jpg" class="d-block w-100" alt="carousel">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="display-3 text-capitalize">Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+        
       </div>
-
       <!-- #endregion Slider -->
 
       <!-- #region Hero -->
@@ -221,6 +179,7 @@
       </section>
       <!-- #endregion Hero -->
 
+      <!-- #region services -->
       <section class="container-fluid c-bg-secondary py-5 my-0">
         <div class="container">
           <div class="row text-center c-text-white">
@@ -316,7 +275,9 @@
         </div>
       </section>
 
+      <!-- #endregion services -->
 
+      <!-- #region Address style -->
       <style>
         address, figure {margin-bottom: 0;}
   
@@ -344,7 +305,7 @@
         }
   
       </style>
-
+      <!-- #endregion Address style -->
 
       <!-- #region Map -->
       <address>
@@ -388,11 +349,6 @@
       </address>
       <!-- #endregion Map -->
 
-      <div class="container-fluid">
-        <div class="container">
-
-        </div>
-      </div>
     </main>
 
     <!-- #endregion main -->
@@ -402,10 +358,10 @@
       <div class="container pt-4">
         <div class="row">
 
-          <div class="col-12 col-md-6 text-center">
-            <span class="text-uppercase">
-              <img class="m-3"  width="75" src="./img/pds_logo.svg" alt="logo">Physicians' Diagnostic Services Center
-            </span>
+          <div class="col-12 col-md-3 text-center">
+            <p class="">Physicians' Diagnostic Services Center
+            </p>
+            <img class=""  width="75" src="./img/pds_logo.svg" alt="logo">
           </div>
 
           <div class="col-6 col-md-3">
@@ -413,7 +369,7 @@
              <ul class="footer-quick-link">
               <li><a href="#">About us</a></li>
               <li><a href="#">Careers</a></li>
-              <li><a href="#">Mission Vision</a></li>
+              <li><a href="#">Marketing</a></li>
               <li><a href="#">Privacy Policy</a></li>
              </ul>
           </div>
@@ -428,9 +384,13 @@
              </ul>
           </div>
 
+          <div class="col-12 col-md-3 text-center">
+            <p class="pb-2">Quality Certification</p>
+            <img width="75" src="./img/accreditation/sgs_logo.png" alt="">
+          </div>
+
           </div>
         </div>
-
  
           <button class="btn c-text-secondary" id="backToTopBtn" >
             <a href="#top">
