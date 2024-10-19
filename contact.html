@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PDSC | Home</title>
+    <title>PDSC | ContactUs</title>
     <link rel="stylesheet" href="./img/bootstrap-logo.svg" />
 
     <link rel="stylesheet" href="./css/bootstrap.css" />
@@ -101,25 +101,38 @@
       <div class="container">
         <div class="row align-items-center"> 
 
-          <div class="col-12 col-lg-7 py-3 px-lg-5">
-            
+          <div class="col-12 col-lg-7 py-3">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7722.653596874322!2d120.97160562872887!3d14.580445120421691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca25ed43b08f%3A0x1cc34e72c564f1a9!2sPhysicians%20Diagnostic%20Center!5e0!3m2!1sen!2sph!4v1729318071685!5m2!1sen!2sph" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-
+ 
           <div class="col-12 col-lg-5 "> 
-            <div class="container">  
-              <form action="" class="row justify-content-center p-4">  
-                <div class="mb-3"><input type="text" class="form-control" placeholder="Name" name="name"></div>
-
-                <div class="mb-3"><input type="tel" name="tel" id="tel" class="form-control" placeholder="Mobile"></div>
-
-                <div class="mb-3"><input type="email" name="email" id="email" class="form-control" placeholder="Email"></div>
-
-                <div class="mb-3"><textarea name="message" id="message" rows="8" class="form-control" placeholder="Mesage"></textarea></div>
-
-                <div class="mb-3"><button class="btn c-bg-accent-primary text-white">Send</button></div>
-                
-              </form>
-
+            <div class="container">   
+                <form action="">
+                  
+                  <div class="mb-3 form-floating">
+                    <input type="text" class="form-control" id="Fullname" placeholder="Name">
+                    <label for="Fullname">Name</label>
+                  </div>
+                  
+                  <div class="mb-3 form-floating">
+                    <input type="text" class="form-control" id="mobile" placeholder="Mobile Number">
+                    <label for="mobile">Mobile</label>
+                  </div>
+                  
+                  <div class="mb-3 form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <label for="email">Email</label>
+                  </div>
+                  
+                  <div class="mb-3 form-floating">
+                    <textarea name="message" style="height: 100px;"  id="message" rows="8" class="form-control" placeholder="Message"></textarea>
+                    <label for="message">message</label>
+                  </div>
+ 
+                  <div class="mb-3"><button class="btn c-bg-accent-primary text-white">Send</button></div>
+ 
+                </form> 
             </div>
             
           </div>
