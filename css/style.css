@@ -212,7 +212,18 @@ nav a {transition: color 300ms;}
   color: var(--black);
   font-family: var(--ff-head)
 }
- 
+
+.Modal-menu p {
+  color: var(--black);
+  font-family: var(--ff-head)
+}
+
+
+.Modal-menu > h1 {
+  color: var(--black);
+  font-family: var(--ff-head)
+}
+
 .footer-quick-link  a {
   padding: 19px;
   text-decoration: none;
@@ -240,59 +251,73 @@ nav a {transition: color 300ms;}
   color: var(--secondary)
 }
 
+.accordion-button {
+  background-color: #f8f9fa;
+  color: var(--black);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
  
+.accordion-button:hover {
+  background-color: var(--accent-primary);
+  color: #fff ;
+}
+
+/* #region nav menu */ 
  
-/* #region keyFrame */
-
-
-
-
-.scroll-scale {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: all 2s;
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: var(--black);
+  padding: 5px 10px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform for slide-up */
 }
 
-.scroll-bottom {
-  opacity: 0;
-  transform: translateY(300px);
-  transition: 3s;
+.nav-link:hover {
+  color: var(--white); /* Text color change on hover */
+  background-color: rgba(255, 88, 51, 0.658); /* Soft background highlight */
+  border-radius: 5px; /* Rounds the background edges */
+  transform: translateY(-5px); /* Slide-up effect */
 }
 
-.scroll-top {
-  opacity: 0;
-  transform: translateY(-300px);
-  transition: 3s;
+/* #endregion nav menu */
+
+
+/* #region animation */
+::-webkit-scrollbar {
+  height: 0;
+  width: 0.5rem;
 }
 
-.show-items {
-  opacity: 1;
-  transform: translateX(0);
+::-webkit-scrollbar-track {
+  background: var(--black);
 }
 
- 
-
-@keyframes glow {
-  0% {
-    background-color: var(--bg-color);
-    box-shadow: none;
-  }
-  100% {
-    background: var(--hover-color);
-    box-shadow: var(--neon-box-shadow);
-  }
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 5rem; 
 }
 
-@keyframes slideAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* #endregion */
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
 
+      .block {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+      }
+/* eto yung para sa mga responsive na part!!*/
+
+/* .btn:hover {
+  color: var(--bs-blue);
+}
+ */
+/* #endregion animation */
  
