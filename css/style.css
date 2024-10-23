@@ -270,7 +270,7 @@ nav a {transition: color 300ms;}
  
 }
 
-/* #region nav menu */ 
+/* #region  menu */ 
  
 .nav-link {
   position: relative;
@@ -287,7 +287,8 @@ nav a {transition: color 300ms;}
   transform: translateY(-5px); /* Slide-up effect */
 }
 
-/* #endregion nav menu */
+
+/* #endregion  menu */
 
 
 /* #region animation */

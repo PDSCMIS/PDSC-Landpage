@@ -309,7 +309,7 @@
       </div>
     </div>
     <!-- #endregion accordion collapsable -->
-
+  
     <!-- #region footer -->
     <footer class="container-fluid c-bg-primary px-0 c-text-white block">
       <div class="container pt-4">
@@ -322,37 +322,32 @@
           </div>
 
           <div class="col-6 col-md-3">
-            <p class="c-font-primary">Company</p>
+            <p class="c-font-primary">Quick links</p>
              <ul class="footer-quick-link">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="./about.html">About us</a></li> 
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#modelPrivacyPolicy">Privacy Policy</a></li>
              </ul>
           </div>
  
           <div class="col-6 col-md-3">
             <p class="c-font-primary">Company</p>
-             <ul class="footer-quick-link">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Mission Vision</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+             <ul class="footer-quick-link"> 
+              <li><a href="https://pdsc.setupphils.com/login/agency" target="_blank">Agency Portal</a></li>
+              <li><a href="https://pdsc.setupphils.com/login/admin" target="_blank">Applicant Portal</a></li>
+              <li><a  href="https://ph.indeed.com/cmp/Physicians'-Diagnostic-Services-Center,-Inc?from=mobviewjob&tk=1iase11pah9fc800&fromjk=fb91aecb52f53783&attributionid=mobvjcmp" target="_blank">Careers</a></li>
+              <li><a href="./contact.html" >Marketing</a></li>
              </ul>
           </div>
 
           <div class="col-12 col-md-3 text-center">
             <p class="pb-2">Quality Certification</p>
             <img width="75" src="./img/accreditation/sgs_logo.png" alt="">
+          </div> 
           </div>
-
-          </div>
-        </div>
- 
+        </div> 
   
-     
-
- 
 
       
       <div class="container text-center py-2 c-font-primary">
@@ -363,8 +358,30 @@
  
       </div>
     </footer>
+
+     <!-- #region Privacy Policy -->
+        <div class="modal fade" id="modelPrivacyPolicy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 Modal-menu" id="exampleModalLabel">Privacy Policy</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body Modal-menu c-font-primary c-text-black">
+                <p class="fw-bold">DISCLAIMER</p>
+                <p>This communication is intended only for the use of the individual or entity to whom it is addressed. It may contain confidential or legally privileged information. If you are not the intended recipient you are notified that disclosing, copying, distributing or taking action in reliance on the contents of this communication is strictly prohibited and may be unlawful. If you have received it by mistake, please notify us immediately by e-mail reply and delete it from your system.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn c-bg-accent-primary text-white" data-bs-dismiss="modal">Close</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #endregion Privacy Policy -->
+
     <!-- #endregion footer -->
 
+    
     <script src="./js/bootstrap.bundle.js"></script>
   </body>
 </html>

@@ -88,7 +88,7 @@
     <main>
       <!-- #region Slider -->
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"> 
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> 
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -99,7 +99,7 @@
         
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/carousel/AD.jpg" class="d-block  w-100" alt="carousel">
+            <img src="./img/carousel/carousel_5.png" class="d-block  w-100" alt="carousel">
             <div class="carousel-caption d-block  d-md-block">
               <h5 class="display-5 c-font-primary c-text-primary text-slide text-fade">"Ensuring the Health</h5> 
               <h4 class="display-5 c-font-primary c-text-primary text-slide">of your Filipino Workforce"</h4>
@@ -357,39 +357,33 @@
           </div>
 
           <div class="col-6 col-md-3">
-            <p class="c-font-primary">Company</p>
+            <p class="c-font-primary">Quick links</p>
              <ul class="footer-quick-link">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a class="p-0" href="./about.html">About us</a></li> 
+              <li><a class="p-0" href="./services.html">Services</a></li>
+              <li><a class="p-0" href="./contact.html">Contact</a></li>
+              <li><a class="p-0" href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#modelPrivacyPolicy">Privacy Policy</a></li>
              </ul>
           </div>
  
           <div class="col-6 col-md-3">
             <p class="c-font-primary">Company</p>
-             <ul class="footer-quick-link">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Mission Vision</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+             <ul class="footer-quick-link"> 
+              <li><a class="p-0" href="https://pdsc.setupphils.com/login/agency" target="_blank">Agency Portal</a></li>
+              <li><a class="p-0" href="https://pdsc.setupphils.com/login/admin" target="_blank">Applicant Portal</a></li>
+              <li><a class="p-0" href="https://ph.indeed.com/cmp/Physicians'-Diagnostic-Services-Center,-Inc?from=mobviewjob&tk=1iase11pah9fc800&fromjk=fb91aecb52f53783&attributionid=mobvjcmp" target="_blank">Careers</a></li>
+              <li><a class="p-0" href="./contact.html" >Marketing</a></li>
              </ul>
           </div>
 
           <div class="col-12 col-md-3 text-center">
             <p class="pb-2">Quality Certification</p>
             <img width="75" src="./img/accreditation/sgs_logo.png" alt="">
+          </div> 
           </div>
-
-          </div>
-        </div>
- 
+        </div> 
   
-     
 
- 
-
-      
       <div class="container text-center py-2 c-font-primary">
         <hr>
         <p>©Copyright  2024 Physicians' Diagnostic services Center. All Right Reserved</p>
@@ -398,6 +392,27 @@
  
       </div>
     </footer>
+
+     <!-- #region Privacy Policy -->
+        <div class="modal fade" id="modelPrivacyPolicy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 Modal-menu" id="exampleModalLabel">Privacy Policy</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body Modal-menu c-font-primary c-text-black">
+                <p class="fw-bold">DISCLAIMER</p>
+                <p>This communication is intended only for the use of the individual or entity to whom it is addressed. It may contain confidential or legally privileged information. If you are not the intended recipient you are notified that disclosing, copying, distributing or taking action in reliance on the contents of this communication is strictly prohibited and may be unlawful. If you have received it by mistake, please notify us immediately by e-mail reply and delete it from your system.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn c-bg-accent-primary text-white" data-bs-dismiss="modal">Close</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #endregion Privacy Policy -->
+
     <!-- #endregion footer -->
 
     
@@ -411,6 +426,42 @@
     
   <!-- #region modal -->  
    
+   <!-- #region medical exam -->
+      <div class="modal fade" id="modalMedical" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Medical Examinations</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="fw-bold pb-2 c-text-black c-font-primary">Basic DOH Pre-employment Medical Examinations:</p>
+              <ul class="service-offered">
+                <li>COMPLETE AND THOROUGH MEDICAL HISTORY AND PHYSICAL EXAMINATION</li>
+                <li>DENTAL SCREENING EXAMINATION</li>
+                <li>VISUAL ACUITY (SNELLEN’S, JAEGER’S)</li>
+                <li>COLOR VISION TEST (ISHIHARA-24 PLATES)</li>
+                <li>AUDIOMETRY (PURE TONE)</li>
+                <li>CHEST X-RAY (DIGITAL)</li>
+                <li>ECG 12 LEADS</li>
+                <li>BLOOD TYPING (ABO AND RH TYPING)</li>
+                <li>COMPLETE BLOOD COUNT (CBC)</li>
+                <li>RPR AND/OR TPHA  (SYPHILLIS TEST)</li>
+                <li>SERUM PREGNANCY TEST (FOR FEMALE)</li>
+                <li>URINALYSIS</li>
+                <li>STOOL EXAMINATION (FECT METHOD) (FOR FOOD HANDLER)</li>
+                <li>PSYCHOLOGICAL ASSESSMENT (FOR OVERSEAS LANDBASED WORK APPLICANT)</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn c-bg-accent-primary text-white" data-bs-dismiss="modal">Close</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- #endregion medical exam -->
+
     <!-- #region medical exam -->
     <div class="modal fade" id="modalMedical" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -643,6 +694,7 @@
     
         <!-- #endregion medical exam -->
     
+
   <!-- #endregion modal -->
   <script src="./js/script.js"></script>
   <script src="mixitup.min.js"></script>
