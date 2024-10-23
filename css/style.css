@@ -16,7 +16,9 @@
   --accent-hover:  hsl(53, 94%, 40%);
 
  --accent-primary : #f28e3f;
+ --accent-primary-opacity : #f28d3f98;
 
+ --accent-primary-faded: var( --accent-primary-opacity);
    /* #region Bootstrap Overrides */
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -200,6 +202,7 @@ nav a {transition: color 300ms;}
 .c-font-primary {font-family: var(--ff-head);}
 .c-font-secondary {font-family: var(--ff-body);}
 
+.c-hamburger-menu {background-color: var(--accent-primary-faded);}
  
 /* Customize */
 
