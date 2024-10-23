@@ -262,6 +262,11 @@ nav a {transition: color 300ms;}
   color: #fff ;
 }
 
+.text-slide { 
+    text-shadow: 2px 2px 3px rgb(255, 255, 254);
+ 
+}
+
 /* #region nav menu */ 
  
 .nav-link {
@@ -274,7 +279,7 @@ nav a {transition: color 300ms;}
 
 .nav-link:hover {
   color: var(--white); /* Text color change on hover */
-  background-color: rgba(255, 88, 51, 0.658); /* Soft background highlight */
+  background-color: rgba(223, 220, 204, 0.425); /* Soft background highlight */
   border-radius: 5px; /* Rounds the background edges */
   transform: translateY(-5px); /* Slide-up effect */
 }
@@ -321,3 +326,34 @@ nav a {transition: color 300ms;}
  */
 /* #endregion animation */
  
+
+.text-fade {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.text-slide {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
