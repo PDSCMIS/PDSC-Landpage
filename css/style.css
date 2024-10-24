@@ -197,13 +197,11 @@ body,h1,h2,h3,h4,h5,h6,p{
 .c-text-accent-hover {color: var(--accent-hover);}
 
 nav a {transition: color 300ms;}
-.c-active {color: var(--accent);}
- 
+.c-active {color: var(--accent);} 
+
 .c-font-primary {font-family: var(--ff-head);}
 .c-font-secondary {font-family: var(--ff-body);}
 
-.c-hamburger-menu {background-color: var(--accent-primary-faded);}
- 
 /* Customize */
 
 .Menu a {
