@@ -213,17 +213,7 @@ nav a {transition: color 300ms;}
   color: var(--black);
   font-family: var(--ff-head)
 }
-
-.Modal-menu p {
-  color: var(--black);
-  font-family: var(--ff-head)
-}
-
-
-.Modal-menu > h1 {
-  color: var(--black);
-  font-family: var(--ff-head)
-}
+ 
 
 .footer-quick-link  a {
   padding: 19px;
@@ -328,10 +318,32 @@ nav a {transition: color 300ms;}
  */
 /* #endregion animation */
  
+.button-learn {
+  text-decoration: none;
+  color: var(--white);
+  background: var(--accent-primary);
+  padding: 5px 10px;
+  margin: 10px 0;
+  display: inline-block;
+  transition: transform 300ms;
+}
+
+.button-learn:hover {
+  color: var(--black); 
+  background-color: var(--accent-primary);
+  transform: translate(0, -10px);
+}
 
 .text-fade {
   opacity: 0;
   animation: fadeIn 2s ease-in forwards;
+}
+
+
+.modal-title {
+  color: var(--black);
+  font-family: var(--ff-body);
+  font-size: large;
 }
 
 @keyframes fadeIn {
