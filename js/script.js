@@ -1,3 +1,30 @@
+// JM ------------------
+
+
+let mybutton = document.getElementById("myBtn");
+     
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "5px 5px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "15px 20px";
+    document.getElementById("logo").style.fontSize = "30px";
+  }
+}
+
+// end jm---------------
+
 let words = document.querySelectorAll(".word");
 words.forEach((word) => {
   let letters = word.textContent.split("");
@@ -111,6 +138,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
+
 
 const scrollScale = document.querySelectorAll(".scroll-scale");
 scrollScale.forEach((el) => observer.observe(el));
