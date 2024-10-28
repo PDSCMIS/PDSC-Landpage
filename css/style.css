@@ -409,6 +409,8 @@ nav a {transition: color 300ms;}
 .dropdown-item.underline-animation {
   color:var(--accent-primary); /* Text color for dropdown items */
 } 
+
+
  
 /* #endregion line animation */
  
@@ -435,7 +437,6 @@ nav a {transition: color 300ms;}
 
 /* Style the navbar links */
 #navbar a { 
-  color: white;
   text-align: center;
   padding: 6px;
   text-decoration: none;   

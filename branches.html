@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="./img/bootstrap-logo.svg" /> 
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   </head>
   <body class="c-bg-white">
     
+
+    
     <!-- #region Header --> 
-    <header>
-      <nav id="top" class="navbar navbar-expand-lg py-3 c-bg-primary">
+    <header> 
+      <nav id="navbar" class="navbar navbar-expand-lg c-bg-primary" >
         <div class="container-fluid">
-          <img  class="" src="./img/pds_logo.svg" width="75" alt="logo" /> 
- 
+          <img  src="./img/pds_logo.svg" width="70"  alt="logo" />  
           <p  class="d-none d-lg-block text-uppercase c-text-white ms-4 h4 c-font-primary"><b>Physicians' Diagnostic Services Center</b></p>
-            
+        
           <button
             class="navbar-toggler "
             type="button"
@@ -27,64 +29,51 @@
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> 
 
-          <div class="collapse navbar-collapse me-5" id="navbarNav"> 
+          <div class="collapse navbar-collapse me-5" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 Menu">
               <li class="nav-item">
-                <a class="h6 nav-link" aria-current="page" href="./index.html">HOME</a>
+                <a class="h6 nav-link underline-animation " aria-current="page" href="./index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="h6 text-decoration-none nav-link" href="./about.html" >ABOUT US</a
+                <a class="h6 text-decoration-none nav-link underline-animation " href="./about.html" >ABOUT US</a
                 >
               </li>
               <li class="nav-item">
-                <a class="h6 text-decoration-none nav-link" href="./services.html">SERVICES</a
-                >
+                <a class="h6 text-decoration-none nav-link underline-animation " href="./services.html">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a class="h6 text-decoration-none nav-link" href="./branches.html">BRANCHES</a
-                >
+                <a class="h6 text-decoration-none nav-link underline-animation " href="./branches.html">BRANCHES</a>
               </li>
               <li class="nav-item">
-                <a class="h6 text-decoration-none nav-link" href="./contact.html">CONTACT US</a
-                >
+                <a class="h6 text-decoration-none nav-link underline-animation " href="./contact.html">CONTACT US</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle p-0 m-1"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"  
-                > PORTAL</a>
-                <ul class="dropdown-menu c-bg-tertiary">
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle m-0 pt-1"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">PORTAL</a>
+                <ul class="dropdown-menu c-bg-tertiary ">
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="https://pdsc.setupphils.com/login/agency"
-                      >Agency</a
-                    >
+                    <a class="dropdown-item underline-animation"
+                      href="https://pdsc.setupphils.com/login/agency">Agency</a>
                   </li>
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="https://pdsc.setupphils.com/login/admin"
-                      >Applicant</a
-                    >
+                    <a class="dropdown-item underline-animation"
+                      href="https://pdsc.setupphils.com/login/admin">Applicant</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
+      </nav> 
+  </header>
 
-    <!-- #endregion Header -->
+  <!-- #endregion Header -->
 
     <!-- #region title -->
     <div class="container">
@@ -360,34 +349,48 @@
     </section> 
     <!-- #endregion menu -->
  
+ 
     <!-- #region footer -->
-    <footer class="container-fluid c-bg-primary px-0 c-text-white block">
-      <div class="container pt-4">
-        <div class="row">
 
-          <div class="col-12 col-md-3 text-center">
-            <p class="">Physicians' Diagnostic Services Center
-            </p>
-            <img class=""  width="75" src="./img/pds_logo.svg" alt="logo">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40"  fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+      </svg>
+    </button>
+     
+    <footer class="container-fluid c-bg-primary px-0 c-text-white block ">
+      <div class="container pt-4">
+        <div class="row flex-column-reverse  flex-md-row"> 
+          <div class="col-12 col-md-3 ">
+           <div class="container-fluid ">
+            <div class="row">
+              <div class="col text-center">
+                <img src="./img/logos/logo_banner.svg" width="300" alt="">
+                <a href="https://www.facebook.com/pages/Physicians-Diagnostic-Services-Center/1640436903174" target="_blank" class="fa fa-facebook"></a> 
+                <a href="mailto:manila@pdsclinics.com" class="fa fa-google"></a>
+                <a href="https://ph.indeed.com/cmp/Physicians'-Diagnostic-Services-Center,-Inc?from=mobviewjob&tk=1iase11pah9fc800&fromjk=fb91aecb52f53783&attributionid=mobvjcmp" target="_blank" class="fa fa-linkedin"></a>
+              </div>
+            </div>
+           </div>
           </div>
 
-          <div class="col-6 col-md-3">
-            <p class="c-font-primary">Quick links</p>
-             <ul class="footer-quick-link">
-              <li><a href="./about.html">About us</a></li> 
-              <li><a href="./services.html">Services</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-              <li><a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#modelPrivacyPolicy">Privacy Policy</a></li>
-             </ul>
+          <div class="col-6 col-md-3 mx-auto text-center">
+            <p class="c-font-primary text-uppercase">Quick links</p>
+            <ul class="footer-quick-link list-unstyled">
+              <li><a class="p-0 underline-animation" href="./about.html">About us</a></li> 
+              <li><a class="p-0 underline-animation" href="./services.html">Services</a></li>
+              <li><a class="p-0 underline-animation" href="./contact.html">Contact</a></li>
+              <li><a class="p-0 underline-animation" href="#" data-bs-toggle="modal" data-bs-target="#modelPrivacyPolicy">Privacy Policy</a></li>
+            </ul>
           </div>
  
-          <div class="col-6 col-md-3">
-            <p class="c-font-primary">Company</p>
-             <ul class="footer-quick-link"> 
-              <li><a href="https://pdsc.setupphils.com/login/agency" target="_blank">Agency Portal</a></li>
-              <li><a href="https://pdsc.setupphils.com/login/admin" target="_blank">Applicant Portal</a></li>
-              <li><a  href="https://ph.indeed.com/cmp/Physicians'-Diagnostic-Services-Center,-Inc?from=mobviewjob&tk=1iase11pah9fc800&fromjk=fb91aecb52f53783&attributionid=mobvjcmp" target="_blank">Careers</a></li>
-              <li><a href="./contact.html" >Marketing</a></li>
+          <div class="col-6 col-md-3  mx-auto text-center">
+            <p class="c-font-primary text-uppercase">Related links</p>
+             <ul class="footer-quick-link list-unstyled"> 
+              <li><a class="p-0 underline-animation" href="https://pdsc.setupphils.com/login/agency" target="_blank">Agency Portal</a></li>
+              <li><a class="p-0 underline-animation" href="https://pdsc.setupphils.com/login/admin" target="_blank">Applicant Portal</a></li>
+              <li><a class="p-0 underline-animation" href="https://ph.indeed.com/cmp/Physicians'-Diagnostic-Services-Center,-Inc?from=mobviewjob&tk=1iase11pah9fc800&fromjk=fb91aecb52f53783&attributionid=mobvjcmp" target="_blank">Careers</a></li>
+              <li><a class="p-0 underline-animation" href="./contact.html" >Marketing</a></li>
              </ul>
           </div>
 
@@ -397,14 +400,11 @@
           </div> 
           </div>
         </div> 
-  
-
-      
+   
       <div class="container text-center py-2 c-font-primary">
         <hr>
         <p>©Copyright  2024 Physicians' Diagnostic services Center. All Right Reserved</p>
       </div>
-
  
       </div>
     </footer>
@@ -414,12 +414,38 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5 Modal-menu" id="exampleModalLabel">Privacy Policy</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Privacy Policy</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body Modal-menu c-font-primary c-text-black">
-                <p class="fw-bold">DISCLAIMER</p>
-                <p>This communication is intended only for the use of the individual or entity to whom it is addressed. It may contain confidential or legally privileged information. If you are not the intended recipient you are notified that disclosing, copying, distributing or taking action in reliance on the contents of this communication is strictly prohibited and may be unlawful. If you have received it by mistake, please notify us immediately by e-mail reply and delete it from your system.</p>
+              <div class="modal-body c-font-primary c-text-black"> 
+                <p>
+                  <span class="fw-bold">Privacy Policy </span>
+                  <br>
+                  Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you visit our website.
+                  
+                  Data Collection: We collect personal information such as your name, email address, and browsing activity when you interact with our site. This information helps us improve our services and personalize your experience.
+                  <br>
+                  <br>
+                  <span class="fw-bold">Disclaimer Policy</span>
+                  <br>
+                  Content Accuracy: While we make every effort to ensure that our content is accurate and up-to-date, we do not guarantee its completeness or reliability.
+                  
+                  External Links: Our website may contain links to third-party sites. We are not responsible for the content or policies of external websites.
+                  
+                  Professional Advice: Any health, financial, or legal information on our site is for informational purposes only and should not replace professional advice. Consult a qualified professional for specific needs.
+                  
+                  <br>
+                  <br>
+                  <span class="fw-bold">Terms of Service</span>
+                  <br>
+                  These Terms govern your use of our website. By accessing our site, you agree to comply with the following conditions:
+                  
+                  User Conduct: You agree not to engage in activities that may harm the site, including posting offensive content, spamming, or attempting unauthorized access.
+                  
+                  Intellectual Property: All content on our website, including text, images, and logos, is the property of Physicians Diagnostic Services Center, INC. You may not use or reproduce any materials without permission.
+                  
+                  
+                   </p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn c-bg-accent-primary text-white" data-bs-dismiss="modal">Close</button> 
@@ -430,8 +456,9 @@
         <!-- #endregion Privacy Policy -->
 
     <!-- #endregion footer -->
-
-    
+ 
+    <script src="./js/script.js";></script>
+    <script src="mixitup.min.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
   </body>
 </html>
