@@ -258,24 +258,21 @@ nav a {transition: color 300ms;}
 .text-slide { 
     text-shadow: 2px 2px 3px rgb(255, 255, 254);
  
+
 }
 
-/* #region  menu */ 
-.nav-link {
-  position: relative;
-  display: inline-block;
-  color: var(--black);
-  padding: 5px 10px;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform for slide-up */
+.glow-text {
+  font-size: 48px;
+  color: var(--primary);
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 255, 255, 0.7),
+    0 0 30px rgba(255, 255, 255, 0.5),
+    0 0 40px rgba(0, 120, 255, 0.4),
+    0 0 70px rgb(0, 119, 255);
 }
 
-.nav-link:hover {
-  color: var(--white); /* Text color change on hover */
-  background-color: rgba(223, 220, 204, 0.425); /* Soft background highlight */
-  border-radius: 5px; /* Rounds the background edges */
-  transform: translateY(-5px); /* Slide-up effect */
-}
-/* #endregion  menu */
+
 
 /* #region animation */
 ::-webkit-scrollbar {
@@ -369,12 +366,57 @@ nav a {transition: color 300ms;}
       opacity: 1;
   }
 }
+
+/* #region line animation */
+/* Base style for navbar and dropdown links */
+.underline-animation {
+  position: relative;
+  color: #fff; /* Adjust to match the color scheme */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s ease;
+}
+
+/* Create the underline effect */
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-primary); /* Underline color (e.g., Bootstrap warning color) */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+/* Hover effect to animate underline */
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Optional: Change link color on hover */
+.underline-animation:hover {
+  color: var(--accent-primary);
+}
+
+/* Ensure dropdown background color and link contrast */
+.dropdown-menu.c-bg-tertiary {
+  background-color: hsla(210, 9%, 13%, 0.541); /* Adjust this color for the dropdown background */
+}
+
+.dropdown-item.underline-animation {
+  color:var(--accent-primary); /* Text color for dropdown items */
+} 
+ 
+/* #endregion line animation */
  
 /* #region Shrink Navbar on Scroll */
 /* Create a sticky/fixed navbar */
 #navbar {
   overflow: visible; 
-  padding: 5px 20px; /* Large padding which will shrink on scroll (using JS) */
+  padding: 15px 20px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.9s; /* Adds a transition effect when the padding is decreased */
   position: relative; /*Sticky/fixed navbar */
   width: 100%;
@@ -405,10 +447,6 @@ nav a {transition: color 300ms;}
   font-weight: bold;
   transition: 0.4s;
 }
-
- 
-
- 
 
  
 /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
@@ -443,38 +481,7 @@ nav a {transition: color 300ms;}
   color: white;
   font-size: 20px;
 }
-
-/* Style the social media icons with color, if you want */
-.icon-bar a:hover {
-  background-color: #000;
-}
-
-.facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.google {
-  background: #dd4b39;
-  color: white;
-}
-
-.linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.youtube {
-  background: #bb0000;
-  color: white;
-}
-/* #endregion social media acc */
-
+ 
 /* #region button top */
 
 #myBtn {
@@ -498,3 +505,39 @@ nav a {transition: color 300ms;}
 }
 
 /* #endregion button top */
+
+/* #region social media logo */
+ 
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 30%; 
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+ 
+/* #endregion social media logo */
+
