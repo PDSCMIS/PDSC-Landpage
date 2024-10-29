@@ -1,7 +1,7 @@
 :root {
  
   --black: #383d3bff;
-  --white: #eee5e9ff; 
+  --white: rgb(223, 223, 223); 
   
   --off-white : #f2f0ef; 
   --lightBlack: hsla(156, 4%, 23%, 0.849);
