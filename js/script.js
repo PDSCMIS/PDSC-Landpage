@@ -17,21 +17,21 @@ function scrollFunction() {
 
 // Back to top button
 
-let mybutton = document.getElementById("myBtn");
+// let mybutton = document.getElementById("myBtn");
       
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
 
-  // Show button when scrolling down 20px
-  window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  };
+//   // Show button when scrolling down 20px
+//   window.onscroll = function() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//       mybutton.style.display = "block";
+//     } else {
+//       mybutton.style.display = "none";
+//     }
+//   };
 
 
 
