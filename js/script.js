@@ -1,10 +1,13 @@
 // JM ------------------
 
- 
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
+ // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() 
+{ 
+  scrollFunction();
+};
 
 function scrollFunction() {
+  //Navbar resize functionality
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "5px 5px";
     document.getElementById("logo").style.fontSize = "25px";
@@ -12,26 +15,25 @@ function scrollFunction() {
     document.getElementById("navbar").style.padding = "15px 20px";
     document.getElementById("logo").style.fontSize = "30px";
   }
+
+  // // Back to top button visibility
+  // let back2top = document.getElementById("myBtn");
+
+  // if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+  // {
+  //   back2top.style.display = "block";
+  // } 
+  // else
+  // {
+  //   back2top.style.display = "none";
+  // }
 }
 
-
-// Back to top button
-
-// let mybutton = document.getElementById("myBtn");
-      
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
-
-//   // Show button when scrolling down 20px
-//   window.onscroll = function() {
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//       mybutton.style.display = "block";
-//     } else {
-//       mybutton.style.display = "none";
-//     }
-//   };
+// Back to top button function
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 
 
